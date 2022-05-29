@@ -12,7 +12,11 @@ let firstCard;
 let secondCard;
 
 let pName = prompt("What is your name?");
-let pChips = parseInt(prompt("How much do you want to play for? (number only)"));
+let pChips;
+
+do {
+    pChips = parseInt(prompt("How much do you want to play for? (numbers >= 50 only)"));
+} while(pChips < 50)
 
 //name and chips both relate to the player object
 let player = {
