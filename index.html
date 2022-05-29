@@ -1,0 +1,22 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <p class="message">Want to play a round? Bets of $50 only. Wins double!</p>
+        <p id="cards">Cards: </p>
+        <p id="sum">Sum:</p>
+        
+        <button id="startButtonHide" onclick="startGame()">START GAME</button>
+            <br>
+        <button onclick="newCard()">NEW CARD</button>
+            <br>
+        <button onclick="playAgain()">PLAY AGAIN</button>
+        <p id="player"></p>
+
+        <h6 class="message">*Note: Ace is automatically set to the value of 11.</h6>
+
+        <script src="index.js"></script>
+    </body>
+</html>
